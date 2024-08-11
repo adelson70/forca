@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="icon" href="{{url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    {% block conteudo %}
+    {% endblock conteudo %}
+
+  <!-- SCRIPTS -->
+   <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

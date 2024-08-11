@@ -16,4 +16,4 @@ if __name__ == '__main__':
     # ENDEREÇO DE IPV4 DO COMPUTADOR
     ip_host = gethostbyname(nome_host)
 
-    app.run(debug=True, host=ip_host)
+    app.run(debug=True, host='192.168.10.26')

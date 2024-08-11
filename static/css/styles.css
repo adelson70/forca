@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* TODO HTML TERA ESSA FONT */
+body {
+    font-family: 'Grandstander';
+}
+
+/* DEFININDO ESTILOS DO TITULO */
+.titulo-jogo{
+    text-align: center;
+    /* TAMANHO IDEAL PARA CELULATES */
+    font-size: 10vw;
+}
+
+/* PARA TELAS DE COMPUTADORES SERÁ ALTERADO DE VW PARA VH */
+@media (min-width: 768px){
+    .titulo-jogo{
+        font-size: 4vw;
+    }
+}

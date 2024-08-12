@@ -152,7 +152,23 @@ body {
     }
 
     /* PARA TELAS DE CELULARES DE ALTURA ATÉ 1920px */
-    @media (max-height: 1920px) {
+    @media (max-height: 1921px) {
+        .forca{
+            background-image: url(../img/fork/forca-700.png);
+            width: 700px;
+            height: 700px;
+        }
+
+        .word{
+            left: 12%;
+            width: 45vh;
+            font-size: 7vh;
+            top: 52vh;
+        }
+    }
+
+    /* PARA TELAS DE CELULARES DE ALTURA ATÉ 2340px */
+    @media (max-height: 2341px) {
         .forca{
             background-image: url(../img/fork/forca-700.png);
             width: 700px;

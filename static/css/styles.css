@@ -104,7 +104,7 @@ body {
 @media (orientation: portrait) {
     
     /* PARA TELAS DE CELULARES DE ALTURA ATÉ 667px*/
-    @media (max-width: 668px) {
+    @media (max-height: 737px) {
         .forca{
             background-image: url('../img/fork/forca-180.png');
             width: 180px;
@@ -116,6 +116,54 @@ body {
             width: 50vh;
             font-size: 6vh;
             top: 50vh;
+        }
+    }
+
+    /* PARA TELAS DE CELULARES DE ALTURA ATÉ 812px */
+    @media (min-height: 738px) and (max-height: 813px){
+        .forca{
+            background-image: url('../img/fork/forca-180.png');
+            width: 180px;
+            height: 180px;
+        }
+
+        .word{
+            left: 10%;
+            width: 38vh;
+            font-size: 6vh;
+            top: 44vh;
+        }
+    }
+
+    /* PARA TELAS DE CELULARES DE ALTURA ATÉ 896px */
+    @media (min-height: 814px) and (max-height: 897px) {
+        .forca{
+            background-image: url('../img/fork/forca-245.png');
+            width: 245px;
+            height: 245px;
+        }
+
+        .word{
+            left: 10%;
+            width: 38vh;
+            font-size: 6vh;
+            top: 50vh;
+        }
+    }
+
+    /* PARA TELAS DE CELULARES DE ALTURA ATÉ 1920px */
+    @media (max-height: 1920px) {
+        .forca{
+            background-image: url(../img/fork/forca-700.png);
+            width: 700px;
+            height: 700px;
+        }
+
+        .word{
+            left: 12%;
+            width: 45vh;
+            font-size: 7vh;
+            top: 52vh;
         }
     }
 }

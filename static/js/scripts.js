@@ -18,6 +18,24 @@ function orientacao(){
     }
 
     console.log(orientacao)
+
+    fetch('/dimensao', {
+        method: 'POST',
+        headers: {
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify({largura: largura, altura: altura})
+
+    })
+    .then(response=>response.json())
 }
 
 window.addEventListener('load', orientacao)
+
+// QUANDO CLICA NA LETRA PARA DESCOBRIR A PALAVRA
+document.querySelectorAll('.btn-letter').forEach(button=>{
+    button.addEventListener('click', function(){
+        const letter = this.getAttribute('data-letter')
+        console.log(letter)
+    })
+})

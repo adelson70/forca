@@ -7,4 +7,12 @@ def configure_routes(app):
     def inicio():
         return(render_template('forca.html'))
     
-    # ROTA PARA ...
+    # ROTA PARA SABER A DIMENSÃO DO DISPOSITIVO
+    @app.route('/dimensao', methods=['POST'])
+    def dimensao():
+        data = request.get_json()
+        largura = data.get('largura')
+        altura = data.get('altura')
+        print(f'{largura}x{altura}')
+        
+        return redirect(url_for('inicio'))

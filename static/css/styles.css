@@ -3,6 +3,14 @@
 /* TODO HTML TERA ESSA FONT */
 body {
     font-family: 'Grandstander';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogo-forca{
+    width: 99vw;
+    height: 99vh;
 }
 
 /* DEFININDO ESTILOS DO TITULO */
@@ -18,3 +26,58 @@ body {
         font-size: 4vw;
     }
 }
+
+/* DEFININDO O ESTILO DA IMAGEM DA FORCA */
+.container-forca{
+    position: absolute;
+    left: 25%;
+    
+}
+
+.forca{
+    margin-top: 5vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.word{
+    position: absolute;
+    left: 50%;
+    font-size: 75px;
+    font-weight: 100;
+}
+
+
+/* FORMATOS PARA COMPUTADOR */
+@media (orientation: landscape){
+    
+    /* TELAS DE COMPUTADOR DE LARGURA ATÉ 1024px */
+    @media (min-width: 1024px) and (max-width: 1367px) {
+        .forca {
+            background-image: url('../img/fork/forca-245.png');
+            width: 245px;
+            height: 245px;
+        }
+
+        .word{
+            width: 41vw;
+            font-size: 6vw;
+            top: 30vh;
+        }
+    }
+
+
+    /* TELAS DE COMPUTADORES DE LARGURA ATÉ 1920 */
+    @media (min-width: 1368px) and (max-width: 1920px) {
+        .forca {
+            background-image: url('../img/fork/forca-700.png');
+            width: 700px;
+            height: 700px;
+        }
+    }
+
+}
+
+/* FORMATADOS PARA CELULARES */
+

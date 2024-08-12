@@ -67,17 +67,55 @@ body {
         }
     }
 
-
-    /* TELAS DE COMPUTADORES DE LARGURA ATÉ 1920 */
-    @media (min-width: 1368px) and (max-width: 1920px) {
+    /* TELAS DE COMPUTADOR DE LARGURA ATÉ 1684px */
+    @media (min-width: 1368px) and (max-width: 1685px) {
         .forca {
-            background-image: url('../img/fork/forca-700.png');
-            width: 700px;
-            height: 700px;
+            background-image: url('../img/fork/forca-245.png');
+            width: 245px;
+            height: 245px;
+        }
+
+        .word{
+            width: 31vw;
+            font-size: 5vw;
+            top: 26vh;
+        }
+    }
+
+
+    /* TELAS DE COMPUTADORES DE LARGURA ATÉ 2560px */
+    @media (min-width: 1685px) and (max-width: 2560px) {
+        .forca {
+            background-image: url('../img/fork/forca-490.png');
+            width: 490px;
+            height: 490px;
+        }
+
+        .word{
+            width: 43vw;
+            font-size: 6vw;
+            top: 33vh;
         }
     }
 
 }
 
 /* FORMATADOS PARA CELULARES */
+@media (orientation: portrait) {
+    
+    /* PARA TELAS DE CELULARES DE ALTURA ATÉ 667px*/
+    @media (max-width: 668px) {
+        .forca{
+            background-image: url('../img/fork/forca-180.png');
+            width: 180px;
+            height: 180px;
+        }
 
+        .word{
+            left: 11%;
+            width: 50vh;
+            font-size: 6vh;
+            top: 50vh;
+        }
+    }
+}

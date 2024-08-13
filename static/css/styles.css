@@ -94,12 +94,18 @@ button{
             background-image: url('../img/fork/forca-245.png');
             width: 245px;
             height: 245px;
+            left: -5vw;
         }
 
         .word{
-            width: 31vw;
-            font-size: 5vw;
-            top: 26vh;
+            width: 50vw;
+            font-size: 51px;
+            top: 49vh;
+            left: 45vw;
+        }
+
+        .container-letras{
+            margin-top: 50vh;
         }
     }
 
@@ -110,12 +116,19 @@ button{
             background-image: url('../img/fork/forca-490.png');
             width: 490px;
             height: 490px;
+            left: -5vw;
+            top: -4vh;
         }
 
         .word{
-            width: 43vw;
-            font-size: 6vw;
-            top: 33vh;
+            width: 50vw;
+            font-size: 95px;
+            top: 59vh;
+            left: 48vw;
+        }
+
+        .container-letras{
+            margin-top: 61vh;
         }
     }
 

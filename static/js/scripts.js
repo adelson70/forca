@@ -56,5 +56,20 @@ document.addEventListener('DOMContentLoaded', function() {
         else if (newWord.includes(' ')){
             console.log('apenas palavras!')
         }
+
+        else{
+            console.log(newWord)
+
+            fetch('/addPalavra', {
+                method: 'POST',
+                headers: {
+                    'Content-Type':'application/json'
+                },
+                body: JSON.stringify({word: newWord})
+        
+            })
+            .then(response=>response.json())
+
+        }
     })
 })

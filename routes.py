@@ -25,3 +25,16 @@ def configure_routes(app):
     @app.route('/admin', methods=['POST', 'GET'])
     def admin():
         return(render_template(('admin.html')))
+    
+    # ROTA DE ADICIONAR PALAVRA
+    @app.route('/addPalavra', methods=['POST'])
+    def addPalavra():
+        data = request.get_json()
+        palavra = data.get('word')
+
+        print(palavra)
+        
+        adicionarPalavra(palavra)
+
+
+        return redirect(url_for('admin'))

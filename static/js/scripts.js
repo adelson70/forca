@@ -39,3 +39,22 @@ document.querySelectorAll('.btn-letter').forEach(button=>{
         console.log(letter)
     })
 })
+
+// QUANDO CLICA PARA ADICIONAR A PALAVRA AO BANCO DE DADOS
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.btn-add-word').addEventListener('click', function(){
+        const newWord = document.getElementById('novaPalavra').value
+        
+        if (newWord.length < 3){
+            console.log('Minimo 3 letras!')
+        }
+
+        else if (newWord.length > 12){
+            console.log('Maximo 12 letras!')
+        }
+
+        else if (newWord.includes(' ')){
+            console.log('apenas palavras!')
+        }
+    })
+})

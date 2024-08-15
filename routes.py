@@ -1,5 +1,8 @@
 # GERENCIAMENTO DAS ROTAS
 from flask import render_template, redirect, url_for, request, session
+from utils import adicionarPalavra
+
+
 def configure_routes(app):
 
     # ROTA DE INICIO DA APLICAÇÃO
@@ -16,3 +19,9 @@ def configure_routes(app):
         print(f'{largura}x{altura}')
         
         return redirect(url_for('inicio'))
+    
+
+    # ROTA ADMIN PARA ADICIONAR PALAVRAS
+    @app.route('/admin', methods=['POST', 'GET'])
+    def admin():
+        return(render_template(('admin.html')))

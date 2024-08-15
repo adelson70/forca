@@ -63,6 +63,19 @@ button{
     font-family: 'Grandstander';
 }
 
+.new-word{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40%;
+}
+
+.btn-add-word{
+    font-size: 15px;
+    border-radius: 10px;
+}
+
 
 /* FORMATOS PARA COMPUTADOR */
 @media (orientation: landscape){
